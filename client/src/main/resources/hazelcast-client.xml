@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hazelcast-client xsi:schemaLocation="http://www.hazelcast.com/schema/client-config hazelcast-client-config-3.8.xsd"
+           xmlns="http://www.hazelcast.com/schema/client-config"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <group>
+        <name>dev</name>
+        <password>dev-pass</password>
+    </group>
+    <serialization>
+        <data-serializable-factories>
+            <data-serializable-factory factory-id="111">
+                com.iqmsoft.payara.MsgDataSerializableFactory
+            </data-serializable-factory>
+        </data-serializable-factories>
+    </serialization>
+</hazelcast-client>
